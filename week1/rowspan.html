@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table{
+            background-color: salmon;
+            margin: 20px;
+            float: center;
+        }
+    </style>
+</head>
+<body>
+    <table border="1" cellspacing="0" width="30%">
+        <tr>
+            <th>Name</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <!-- to merge two rows together we use rowspan -->
+            <td rowspan="2">Ram</td>
+            <td>98616363</td>
+        </tr>
+        <tr>
+            <td>ram@gmail.com</td>
+        </tr>
+    </table>
+    <!-- using both colspan and rowspan -->
+    <table border="1" cellspacing="0" width="100%">
+        <tr>
+            <th rowspan="2">Name</th>
+            <th colspan="2">Contact</th>
+        </tr>
+        <tr>
+            <th>Email</th>
+            <th>Ph.no</th>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td>@gmail.com</td>
+            <td>980101010</td>
+        </tr>
+        <tr>
+            <td>Sita</td>
+            <td>@gmail</td>
+            <td>984100000</td>
+        </tr>
+    </table>
+    <table border="1" cellspcaing="0" width="50%">
+        <tr>
+            <th colspan="3">a</th>
+        </tr>
+        <tr>
+            <th>b</th>
+            <th>c</th>
+            <th>d</th>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">e</td>
+            <td>f</td>
+        </tr>
+        <tr>
+            <td>g</td>
+        </tr>
+        <tr>
+            <td rowspan="2" colspan="2">h</td>
+            <td>i</td>
+        </tr>
+    </table>
+</body>
+</html>
