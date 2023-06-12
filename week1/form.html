@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- prettier is used to format the code using rightclick and format with -->
+    <!-- shortcut for input tag is inp + enter -->
+    <!-- types of input: text, password, email, number, radio, checkbox, date, submit, reset, file -->
+    <!-- attributes such as type, name, value, id, placeholder is used -->
+    <form>
+        <!-- fieldset is used inside form to give a border-->
+      <fieldset>
+        <!-- legend is a tag used to give titles -->
+        <legend>Personal Details</legend>
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          name="fname"
+          id="fname"
+          placeholder="enter first name"
+        />
+        <br />
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          name="lname"
+          id="lname"
+          placeholder="enter last name"
+        /><br />
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" /><br />
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" /><br />
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="dob" id="dob" /><br />
+        <label for="contact">Contact Number</label>
+        <input type="number" name="contact" id="contact" /><br />
+        <!-- select is used to give options to select a single option, option tag should be used inside select-->
+        <!-- lekhne kura ma value chaidaina, nalekhne ma chaixa since database ma store hunne value ho, so the value should be understandable -->
+        <select name="City" id="city">
+          <option value="kathmandu">Kathmandu</option>
+          <option value="bhaktapur">Bhaktapur</option>
+          <option value="patan">Patan</option></select
+        ><br />
+        <label for="">Gender</label><br />
+        <!-- multiple options checked use checkbox, single option should be selected use radio-->
+        <input type="radio" name="Gender" id="Gender" value="M" />Male
+        <input type="radio" name="Gender" id="Gender" value="F" checked />Female
+        <input type="radio" name="Gender" id="Gender" value="Other" />Others
+        <br />
+        <!-- name needs to have the same value for only single choice to be selected -->
+        <label for="">Select any two options</label><br />
+        <input type="checkbox" name="subjects" id="subjects" value="HTML" />HTML
+        <input type="checkbox" name="subjects" id="subjects" value="CSS" />CSS
+        <input type="checkbox" name="subjects" id="subjects" value="JS" />JS
+        <input type="checkbox" name="subjects" id="subjects" value="REACT"/>REACT <br />
+        <input type="submit" name="" value="submit" />
+        <input type="reset" name="" value="reset" />
+        <input type="file" name="" value="file" />
+      </fieldset>
+    </form>
+  </body>
+</html>
