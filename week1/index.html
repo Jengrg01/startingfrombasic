@@ -10,7 +10,9 @@
     <!-- shortcut for input tag is inp + enter -->
     <!-- types of input: text, password, email, number, radio, checkbox, date, submit, reset, file -->
     <!-- attributes such as type, name, value, id, placeholder is used -->
-    <form>
+    <!-- use netlify to host websites -->
+    <form action="https://formsubmit.co/jengrg003@gmail.com" method="POST">
+      <!-- through formsubmit.co -->
         <!-- fieldset is used inside form to give a border-->
       <fieldset>
         <!-- legend is a tag used to give titles -->
@@ -21,7 +23,9 @@
           name="fname"
           id="fname"
           placeholder="enter first name"
+          required
         />
+        <!-- required is an attribute used to prevent the user from submitting the form before the blank is filled -->
         <br />
         <label for="lname">Last Name</label>
         <input
