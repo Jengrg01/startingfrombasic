@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            background-color: blanchedalmond;
+        }
+        .demo1{
+            color: cadetblue;
+            font-weight: bold;
+        }
+        .demo2{
+            font-size: 30px;
+        }
+        .demo3{
+            box-shadow: 1px 2px 1px salmon;
+        }
+        .demo4{
+            font-style: italic;
+        }
+        .color{
+            background-color: seagreen;
+            border-radius: 25px;
+            padding: 8px;
+            border-style: none;
+            text-transform: capitalize;
+            font-size: 20px;
+        }
+        .left{
+            color: bisque;
+        }
+        .right{
+            color: cornsilk;
+        }
+        #content{
+            background-color: cadetblue;
+            color: rgb(233, 216, 195);
+        }
+    </style>
+</head>
+<body>
+    <!-- infinite classes can be added -->
+    <h1 class="demo demo1">hello world</h1>
+    <div class="demo1 demo4">hello world 1</div>
+    <p class="demo2 demo demo4">hello world 2</p>
+    <h2 class="demo3 demo demo2">hello world 3</h2>
+    <button class="color left">hello</button>
+    <button class="color right">hi</button>
+    <h3 id="content" class="demo3">This is id</h3>
+    <!-- id is always unique, mainly used in js, both id and class can be used in the same element-->
+    <p class="demo2 demo3" id="content">hehe</p>
+    <div class="demo" id="content">:v</div>
+</body>
+</html>
