@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .demo{
+            height: 350px;
+            width: 350px;
+            border: 2px solid lightblue;
+            margin: 10px auto;
+            position: relative;
+        }
+        .image{
+            /* height: 600px;
+            width: 600px; */
+            height: 100%;
+            width: 100%;
+        }
+        .text-box{
+            height: 100px;
+            width: 350px;
+            background-color: rgb(174, 241, 174);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: none;
+        }
+        .demo:hover .text-box{
+            display: block;
+        }
+        .demo:hover{
+            box-shadow: 15px 16px 10px darkgreen;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <img class= "image" src="https://cdn.download.ams.birds.cornell.edu/api/v1/asset/161379931/1800" alt="">
+        <div class="text-box">
+            <h1>Blue throated barbet</h1>
+            <h3>Bird</h3>
+            <h3>Psilopogon asiaticus</h3>
+        </div>
+    </div>
+    <div>&gt;</div>
+    <!-- to create < and > we use &lt; and &gt; -->
+</body>
+</html>

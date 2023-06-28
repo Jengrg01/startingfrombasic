@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            height: 300px;
+            width: 300px;
+            border: 3px solid rebeccapurple;
+            overflow: hidden;
+            /* so that the animation doesnt leave the box */
+            /* we can also use overflow: hidden to prevent leakage of image outside the box */
+        }
+        .image{
+            height: 100%;
+            width: 100%;
+            transition: all 3s;
+        }
+        .demo:hover .image{
+            transform: scale(1.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <img class="image" src="https://images.squarespace-cdn.com/content/v1/53ecd1bde4b0a6f9524254f8/1414752490093-6W1D5IV5FTQXW10IN20I/image-asset.jpeg?format=1000w" alt="">
+    </div>
+</body>
+</html>

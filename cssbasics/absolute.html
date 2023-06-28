@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            height: 400px;
+            width: 400px;
+            background-color: lightblue;
+            position: absolute;
+            /* now the box can be move to anywhere inside the parent */
+            top: 100px;
+            right: 300px;
+            /* doesn't work in position relative */
+        }
+        .demo1{
+            height: 350px;
+            width: 350px;
+            background-color: lightseagreen;
+            position: absolute;
+            top: 20px;
+            left: 23px;
+        }
+        .demo2{
+            height: 300px;
+            width: 300px;
+            background-color: lightskyblue;
+            position: absolute;
+            top: 20px;
+            left: 23px;
+        }
+        .demo3{
+            height: 250px;
+            width: 250px;
+            background-color: lightseagreen;
+            position: absolute;
+            top: 22px;
+            left: 23px;
+        }
+        .demo4{
+            height: 200px;
+            width: 200px;
+            background-color: lightskyblue;
+            position: absolute;
+            top: 22px;
+            left: 23px;
+        }
+        .demo5{
+            height: 150px;
+            width: 150px;
+            background-color: lightseagreen;
+            position: absolute;
+            top: 22px;
+            left: 23px;
+        }
+        .demo6{
+            height: 100px;
+            width: 100px;
+            background-color: lightskyblue;
+            position: absolute;
+            top: 22px;
+            left: 23px;
+        }
+        .demo7{
+            height: 50px;
+            width: 50px;
+            background-color: lightseagreen;
+            position: absolute;
+            top: 22px;
+            left: 23px;
+        }
+        .demo8{
+            height: 25px;
+            width: 25px;
+            background-color: lightskyblue;
+            position: absolute;
+            top: 10px;
+            left: 13px;
+
+        }
+        .main{
+            height: 400px;
+            width: 400px;
+            background-color: lightcoral;
+            position: absolute;
+            top: 100px;
+            left: 250px;
+        }
+        .sub1{
+            height: 50px;
+            width: 45px;
+            background-color: lightpink;
+            position: absolute;
+            top: 180px;
+            right: 20px;
+        }
+        .sub2{
+            height: 50px;
+            width: 45px;
+            background-color: lightpink;
+            position: absolute;
+            top: 180px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- body is always relative, the relative position is required for absolute, it is very important to recognize the parent body -->
+    <!-- for cases where the value cannot leave outside the box(parent)  -->
+    <div class="demo">
+        <!-- if position is not found in the tag which has child, the tag having relative position will be acknowledged as the parent,(you can also acknowledge parents having absolute position) -->
+        <div class="demo1">
+            <!-- child of parent demo in this case -->
+            <div class="demo2">
+                <!-- child of demo1 -->
+                <div class="demo3">
+                    <!-- child of demo2 -->
+                    <div class="demo4">
+                        <div class="demo5">
+                            <div class="demo6">
+                                <div class="demo7">
+                                    <div class="demo8"></div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="sub1"></div>
+        <div class="sub2"></div>
+    </div>
+</body>
+</html>

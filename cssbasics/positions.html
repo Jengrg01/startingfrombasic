@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .demo{
+            height: 300px;
+            width: 300px;
+            background-color: bisque;
+            position: relative;
+            /* top, left, right and bottom are the attributes of position- relative(box-placement)*/
+            top: 65px;
+            left: 60px;
+            /* either you have top or bottom, right ot left both cannot be chosen simultaneously and only the demo box moves while demo1 stays in default position, example: when bottom 50px is used the demo box moves up by 50px while demo1 remains constant */
+            z-index: -1;
+            /* the greater value comes infront in z-index */
+        }
+        .demo1{
+            height: 300px;
+            width: 300px;
+            background-color: rgb(163, 134, 96);
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Types of Positions: 
+    1. Staitic: 
+    2. Relative
+    3. Sticky
+    4. Fixed 
+    5. Absolute -->
+    <div class="demo"></div>
+    <div class="demo1"></div>
+</body>
+</html>
