@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 3px 6px 4px 5px;
+            padding: 1px;
+            box-sizing: border-box;
+        }
+        .container{
+            /* grid gapings for rows and colums always include a +1 gap line */
+            display: grid;
+            grid-template-rows: 60px 120px 240px 60px;
+            grid-template-columns: 25% 25% 25% 20%;
+            gap: 1.25%;
+        }
+        .demo1{
+            background-color: lemonchiffon;
+            grid-column: 1/5;
+        }
+        .demo2{
+            background-color: lightblue;
+        }
+        .demo3{
+            background-color: lightyellow;
+        }
+        .demo4{
+            background-color: lightcyan;
+        }
+        .demo5{
+            background-color: lightgoldenrodyellow;
+            grid-row: 2/4;
+            grid-column: 4/5;
+        }
+        .demo6{
+            background-color: lightgray;
+            grid-column: 1/4;
+        }
+        .demo7{
+            background-color: lightpink;
+            grid-column: 1/5;
+        }
+        .image{
+            height: 100px;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+          <!-- using .demo*7 to create the classes -->
+         <div class="demo1">header</div>
+         <div class="demo2">
+            <img class="image" src="https://www.vhv.rs/dpng/d/594-5948316_cinnamoroll-sanrio-plastic-hd-png-download.png" alt="">
+         </div>
+         <div class="demo3">box2</div>
+         <div class="demo4">box3</div>
+         <div class="demo5">sidebar</div>
+         <div class="demo6">maincontent</div>
+         <div class="demo7">footer</div>
+    </div>
+</body>
+</html>

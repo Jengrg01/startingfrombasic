@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Caramel&family=Roboto&family=Rubik:ital@1&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Roboto;
+        font-weight: bolder;
+      }
+      .container {
+        width: 100%;
+        height: 100%;
+        min-height: 100vh;
+        background-color: #FFD4D8;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        line-height: 70px;
+        height: 50px;
+        bottom: 30px;
+      }
+      .Logo {
+        font-family: Caramel;
+        display: flex;
+        font-size: 95px;
+        font-weight: lighter;
+        color: #7b337d;
+        letter-spacing: 2px;
+        cursor: pointer;
+      }
+      .Item {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .Item li {
+        list-style: none;
+        margin: 15px;
+        font-weight: bold;
+      }
+      .li{
+        margin: 20px 10px;
+      }
+      .Item li a {
+        font-family: Caramel;
+        font-size: 50px;
+        letter-spacing: 1px;
+        color: #430d4b;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+      .Item li:hover a,
+      .contacts a:hover {
+        color: #d499c6;
+      }
+      .contacts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .contacts a {
+        font-size: 40px;
+        margin: 10px;
+        color: #512475;
+      }
+      .content{
+        margin: 80px 30px 15px;
+        position: relative;
+      }
+      .me,
+      .image {
+        width: 50%;
+        height: auto;
+      }
+      .image img {
+        height: 300px;
+        position: absolute;
+        top: 60px;
+        left: 760px;
+        width: 40%;
+        float: left;
+        border-radius: 15%;
+      }
+      .content h1 {
+        font-size: 40px;
+        font-family: Caramel;
+        font-weight: bold;
+        position: relative;
+      }
+      .me {
+        font-size: 20px;
+        margin: 20px 15px;
+        font-family: Roboto;
+        font-weight: bold;
+        word-spacing: 2px;
+        color: #430d4b;
+        text-align: justify;
+      }
+
+      @media screen and (max-width: 700px){
+         nav {
+           display: flex;
+           flex-direction: column;
+        }
+        .container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media screen and (max-width: 500px){
+        nav {
+           width:70%;
+           display: flex;
+           flex-direction: column;
+        }
+        .container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+    <title>About Me</title>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="Logo">Immortelles<b>♡</b></div>
+        <ul class="Item">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="skills.html">skills</a></li>
+          <li><a href="hobbies.html">hobbies</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+        <div class="contacts">
+          <a href="https://www.facebook.com/jen.grg.35"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://www.instagram.com/jen_grg_01/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.linkedin.com/in/jenisha-gurung-5a1069252/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </nav>
+      
+      <div class="content">
+        <h1>About me</h1>
+        <ul type="circle" class="me">
+          <li class="list">
+            I am 18 years old and was born on October 10, 2004 A.D.
+          </li>
+          <li class="list">
+            My family consists of my parents, grandparents and a younger brother
+            who is 16 years old<br />
+            and looks quite similar to me.
+          </li>
+          <li class="list">
+            I graduated my +2 from Global School of Science via biology.
+          </li>
+          <li class="list">
+            I am interested in arts, astrology, skincare, fashion and makeup as
+            well.
+          </li>
+          <li class="list">
+            I am a very competetive person and love participating in events such
+            as debates, speeches etc.
+          </li>
+          <li class="list">
+            I like sleeping quite alot and often find myself having naps in
+            between my work.
+          </li>
+          <li class="list">
+            I like reading light novels especially romance and fantasy genre,<br />
+            one of my favorite novel is Trash o the Count's family.
+          </li>
+        </ul>
+        <div class="image">
+          <img
+            src="https://media.tenor.com/GT2NuX5husQAAAAd/oshi-no-ko-hoshino-ai.gif"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

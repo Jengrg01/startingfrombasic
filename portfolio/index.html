@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Caramel&family=Roboto&family=Rubik:ital@1&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+    <title>My Portfolio</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: Roboto;
+        font-weight: bolder;
+      }
+      .container {
+        width: 100%;
+        min-height: 100vh;
+        background-color: #f5d5e0;
+      }
+      nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-around;
+        line-height: 70px;
+        height: 70px;
+        z-index: 110;
+      }
+      .Logo {
+        font-family: Caramel;
+        display: flex;
+        font-size: 80px;
+        font-weight: bold;
+        color: #7b337d;
+        letter-spacing: 2px;
+        cursor: pointer;
+      }
+      b {
+        font-size: 50px;
+      }
+      .Item {
+        display: flex;
+      }
+      .Item li {
+        list-style: none;
+        margin: 15px;
+        font-weight: bold;
+      }
+      .Item li a {
+        font-family: Caramel;
+        font-size: 50px;
+        letter-spacing: 1px;
+        color: #430d4b;
+        text-decoration: none;
+        text-transform: capitalize;
+      }
+      .Item li:hover a,
+      .contacts a:hover {
+        color: #d499c6;
+      }
+      .contacts {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .contacts a {
+        font-size: 30px;
+        margin: 10px;
+        color: #512475;
+      }
+      .wrap {
+        display: flex;
+        width: 100%;
+        height: calc(100vh - 70px);
+        justify-content: center;
+        align-items: center;
+        padding: 10%;
+        overflow: hidden;
+      }
+      .cols {
+        width: 50%;
+      }
+      .collage0 {
+        width: 70%;
+        z-index: 5;
+      }
+      .firstline {
+        display: block;
+        position: relative;
+        font-size: 65px;
+        font-family: Caramel;
+      }
+      .firstline::after {
+        position: absolute;
+        content: "";
+        height: 2px;
+        width: 40px;
+        bottom: 10px;
+        background-color: #cc79b9;
+      }
+      h1 {
+        display: block;
+        font-family: Caramel;
+        font-size: 60px;
+        font-weight: 900;
+      }
+      .multitext {
+        font-family: Caramel;
+        font-size: 60px;
+        color: #ad5499;
+        text-transform: capitalize;
+      }
+      p {
+        display: block;
+        width: 90%;
+        font-size: 1.2em;
+      }
+      .buttons {
+        width: 100%;
+        position: relative;
+        left: 50px;
+        padding-top: 20px;
+      }
+      button {
+        outline: none;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        color: #a77fbb;
+        background-color: #e7d7f1;
+        padding: 12px;
+        margin: 4px;
+        border-radius: 20px;
+        word-spacing: 2px;
+        text-transform: capitalize;
+        box-shadow: 9px 10px 5px #ac619b;
+      }
+      button a {
+        text-transform: capitalize;
+        text-decoration: none;
+        color: #a77fbb;
+        word-spacing: 2px;
+      }
+      button:hover {
+        background-color: #d499c6;
+      }
+      .images {
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+      .images img {
+        position: relative;
+        height: 500px;
+        width: calc(100% - 70px);
+        left: 120px;
+        top: 30px;
+      }
+      @media screen and (max-width: 700px){
+         nav {
+           display: flex;
+           flex-direction: column;
+        }
+        .container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      @media screen and (max-width: 500px){
+        nav {
+           width:70%;
+           display: flex;
+           flex-direction: column;
+        }
+        .container {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="Logo">Immortelles<b>♡</b></div>
+        <ul class="Item">
+          <li><a href="index.html">home</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="skills.html">skills</a></li>
+          <li><a href="hobbies.html">hobbies</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+        <div class="contacts">
+          <a target="_blank" href="https://www.facebook.com/jen.grg.35"
+            ><i class="fa-brands fa-facebook"></i
+          ></a>
+          <a target="_blank" href="https://www.instagram.com/jen_grg_01/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a target="_blank" href="https://www.linkedin.com/in/jenisha-gurung-5a1069252/"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+        </div>
+      </nav>
+
+      <div class="wrap">
+        <div class="cols collage0">
+          <span class="firstline">Hi</span>
+          <h1>I am a <span class="multitext">Student</span></h1>
+          <p>
+            A student at Herald College Kathmandu and I'm currently doing a course on MERN at Dursikhshya. I am also pursuing a degree in Bachelors(Hons) in Computer
+            Science. Come learn more about who I am !
+          </p>
+          <div class="buttons">
+            <button>
+              <a target="_blank" href="Resume-Jenisha-Gurung.pdf"
+                >Check my CV</a
+              >
+            </button>
+            <button>
+              <a target="_blank" href="https://github.com/Jengrg01"
+                >Find my Github account</a
+              >
+            </button>
+          </div>
+        </div>
+        <div class="cols collage1">
+          <div class="images">
+            <img src="chibi.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed(".multitext", {
+        strings: ["Student", "Coder", "Creator"],
+        typeSpeed: 100,
+        backSpeed: 200,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>

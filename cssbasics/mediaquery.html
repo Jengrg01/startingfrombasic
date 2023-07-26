@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: darkolivegreen;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+        .demo{
+            height: 300px;
+            width: 22%;
+            background-color: lightgreen;
+            margin: 10px 0px;
+        }
+        @media screen and (max-width: 1400px){
+            .container{
+                background-color: darkgoldenrod;
+            }
+            .demo{
+                background-color: lightgoldenrodyellow;
+                width: 32%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- used to make a responsive website -->
+    <div class="container">
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+        <div class="demo"></div>
+    </div>
+</body>
+</html>

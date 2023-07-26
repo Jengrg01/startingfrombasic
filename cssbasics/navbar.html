@@ -8,37 +8,248 @@
         *{
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
+
         }
         .container{
-            background-color: lightcoral;
-            height: 40px;
+            height: 800px;
+            width: 100%;
+            background-image: url(https://i.pinimg.com/originals/84/7f/32/847f32959636ca43b91839de9caee492.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
         }
         .li{
-            border: 2px dashed rgb(172, 70, 86);
+            /* border: 2px dashed beige; */
             display: inline-block;
             font-size: 25px;
-            margin: 3px;
+            margin: 20px;
+            background-image: url(https://static.vecteezy.com/system/resources/previews/021/115/210/original/cute-woman-chef-with-cake-free-png.png);
         }
         a{
             text-decoration: none;
-            color: blanchedalmond;
+            color: rgb(197, 190, 180);
         }
         .navbar{
-            /* border: 3px solid lightsalmon;
-            */
+            /* border: 3px double lightcoral; */
+            display: inline-block;
+        }
+        .navbar-icons {
+            list-style: none;
+            font-size: 25px;
+            display: flex;
+            /* border: 1px solid ; */
+            justify-content: space-evenly;
+            width: 15%;
+            margin-left: 45%;
+            color: white;
+            cursor: pointer;
+      }
+        img{
+            width:50px;
+            height:50px;
+        }
+        .content{
+            color: rgb(238, 201, 201);
+            margin-top: 60px;
+         }
+            /* border: 5px double lightgray;} */
+        .title{
+            margin-top: 30px;
+        }
+        .context{
+            padding: 7px 15px;
+            text-align: justify;
+            font-size: 20px;
+            font-weight: lighter;
+            border: 2px double lavenderblush; 
+            background-color: rgb(48, 44, 70);
+        }
+        .content{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        } 
+        .image{
+            height: 450px;
+            width: 600px;
+            background-image: url(https://cdn130.picsart.com/280511254036211.png);
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .text{
+            width: 600px;
+            text-align: center;
+        }
+        .text-box{
+            height: 100px;
+            width: 400px;
+            background-color: rgb(40, 40, 43);
+            position: absolute;
+            bottom: 0;
+            left: 100px;
+            display: none;
+        }
+        .image:hover .text-box{
+            display: block;
+        }
+        .second-container{
+            display: flex;
+            justify-content: space-evenly;
+            color: brown;
+            background-color: rgb(250, 171, 183);
+            border: 2px solid black ;
+        }
+        .image1{
+            margin-top: 30px;
+            height: 450px;
+            width: 600px;
+            background-image: url(https://cdn130.picsart.com/335288480106211.png);
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .image2{
+            margin-top: 30px;
+            height: 450px;
+            width: 600px;
+            background-image: url(https://bakingwithgranny.co.uk/wp-content/uploads/2022/07/Baking-with-Granny-Vector.png);
+            position: relative;
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+        }
+        .text-box1{
+            height: 100px;
+            width: 100%;
+            background-color: lightcoral;
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+            display: none;
+        }
+        .image1:hover .text-box1{
+            display: block;
+        }
+        .text-box2{
+            height: 100px;
+            width: 100%;
+            background-color: lightsalmon;
+            position: absolute;
+            bottom: 0;
+            left: 0px;
+            display: none;
+        }
+        .image2:hover .text-box2{
+            display: block;
+        }
+        .demo{
+            height: 450px;
+            width: 450px;
+            border: 2px solid black;
+            margin: 5px;
+        }
+        .demo1{
+            position: relative;
+        }
+        .demo2{
+            position: relative;
+        }
+        .demo3{
+            position: relative;
+        }
+        .section-content{
+            display: flex;
+            justify-content: space-between;
+        }
+        .demo-image{
+            width: 100%;
+            height: 100%;
+            /* margin: 0px;
+            padding: 0px; */
+        }
+        .demo-text{
+            width: 100%;
+            height: 100px;
+            background-color: lightblue;
+            position: absolute;
+            bottom: 0;
+            display: none;
+        }
+        .demo-image:hover .demo-text{
+            display: block;
+            transform: scale(1);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <ul class="navbar">
-            <li class="li"><a href="https://www.youtube.com/" target="_blank">Home</a></li>
-            <li class="li"><a href="">Information</a></li>
-            <li class="li"><a href="">About</a></li>
-            <li class="li"><a href="">services</a></li>
-            <li class="li"><a href="">contact us</a></li>
-        </ul>
+        <div class="sub-container">
+            <img src="https://static.vecteezy.com/system/resources/previews/021/115/210/original/cute-woman-chef-with-cake-free-png.png" alt="">
+            <ul class="navbar">
+                <li class="li"><a href="./navbar.html">Home</a></li>
+                <li class="li"><a href="https://www.youtube.com/"  target="_blank">Information</a></li>
+                <li class="li"><a href="https://schoolofbakingandpastry.com.np/" target="_blank">About</a></li>
+                <li class="li"><a href="">Services</a></li>
+                <li class="li"><a href="">Contact Us</a></li>
+            </ul>
+            <ul class="navbar-icons">
+                <li>Cart</li>
+                <li>Signin</li>
+                <li>Signout</li>
+            </ul>
+        </div>
+        <div class="content">
+            <div class="text">
+                <h1 class="title">Baking Classes</h1>
+                <h1 class="subheading1">Starting from July 22nd</h1>
+                <h2 class="subheading2" style="text-transform: capitalize; font-size: 30px;">Learn to bake from experts</h2>
+                <p class="context">School of Baking and Pastry Technology is an academy run by, and for, people who are passionate about baking. We offer a range of courses suitable for amateurs as well as those with industry experience. From our intensive 800-hour diploma program , 390 hour certificate, to hobby classes over the weekends, and chocolatier classes through the week, there is something for everybody.Classes range from introductory demonstrations for beginners to intensive week-long professional courses, with a wide variety of hands-on classes for adults and children. Our expert instructors will teach you to master any baking technique with ease.
+                </p>
+            </div>
+            <div class="image">
+                <div class="text-box">
+                    <h1>Contact Us</h1>
+                    <h2>Phone Number: 9800000000</h2>
+                    <h3>Email: bakers001@gmail.com</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="second-container">
+        <div class="image1">
+            <div class="text-box1">
+                <h1>Specialities</h1>
+                <h2>Cakes</h2>
+            </div>
+        </div>
+        <div class="image2">
+            <div class="text-box2">
+                <h1>Offers</h1>
+                <h2>Course available</h2>
+            </div>
+        </div>
+    </div>
+    <div class="section-content">
+        <div class="demo demo1">
+            <div class="demo-text">
+                <h1>Baking</h1>
+                <h2>Classes from July10</h2>
+            </div>
+            <img class="demo-image" src="https://hips.hearstapps.com/hmg-prod/images/overhead-view-of-baking-ingredients-and-a-notepad-royalty-free-image-930086476-1546440806.jpg" alt="">
+        </div>
+        <div class="demo demo2">
+            <div class="demo-text">
+                <h1>Baking</h1>
+                <h2>Classes from July10</h2>
+            </div>
+            <img class="demo-image" src="https://hips.hearstapps.com/hmg-prod/images/overhead-view-of-baking-ingredients-and-a-notepad-royalty-free-image-930086476-1546440806.jpg" alt="">
+        </div>
+        <div class=" demo demo3">
+            <div class="demo-text">
+                <h1>Baking</h1>
+                <h2>Classes from July10</h2>              
+            </div>
+            <img class="demo-image" src="https://hips.hearstapps.com/hmg-prod/images/overhead-view-of-baking-ingredients-and-a-notepad-royalty-free-image-930086476-1546440806.jpg" alt="">
+        </div>
     </div>
 </body>
 </html>
