@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--create a logic to solve the given problems 
+        reverse the number from 123 to 321 
+    to create the value 321
+a%10 = 3
+sum = 0*0 + 3=3
+a = a/10 = 1234
+while loop continues until a=0 then the condition is not fulfilled
+-->
+<!--palindrome number gives the same value even when reversed. example 1221 reversed is 1221 
+    armstrong number 153 the number of digits as power needs to sum the digit to give the same initial value
+153= 1^3+5^3+3^3 = 153 -->
+    <script>
+        let a=111
+        let temp=a//temporary value of a when we require the value of a but dont have it, it is a copy of initial a
+        let sum =0
+        while(a!=0){
+            b= a%10
+            sum = sum*10 + b
+            a= Math.floor(a/10)
+        }//single digits required, use while loop
+        document.write(`${sum}<br>`)
+        if(temp==sum){
+            document.write("palindrome")
+        }
+        else{
+            document.write("not palindrome")
+        } 
+        let x= 153
+        let count= 0
+        let add =0
+        while(x!=0){
+            count= count+1
+            y = x%10
+
+        }
+    </script>
+</body>
+</html>

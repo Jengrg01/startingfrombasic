@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- var =>it is a global scope where it can be redeclared as well a document.write(`the value of ${a} is ${a}<br>`)s can be updated
+    let =>it is a block scope where it can be updated but cannot be redeclared
+    const =>it is a block scope where it can be niether redeclared nor can be updated -->
+    <script>
+        // var a=10
+        // var a=20
+        // var a=30
+        // a=40
+        // {//{}is the scope  
+        //     var a=50
+        //     document.write(`the value of ${a} is ${a}<br>`)
+        //     a=60 //the last value updated will be used
+        // }
+        // document.write(`the value of ${a} is ${a}`)
+        // let a=10 //you cannot use let a more than once
+        // a=20//we can use a to update but not let to declare a
+        // document.write(`the value of ${a} is ${a}<br>`)
+        // {
+        //     let a=30//you can use let inside the scope
+        //     document.write(`the value of ${a} is ${a}<br>`)
+        // }
+        // {
+        //     let a=70
+        //  document.write(`the value of ${a} is ${a}<br>`)//if it can't find the value in it's scope, it will search globally not in the same scope
+        //  a=100
+        // }
+        // document.write(`the value of ${a} is ${a}<br>`)
+        const a=10
+        document.write(`the value of ${a} is ${a}<br>`)//this will show an error
+        
+    </script>
+</body>
+</html>

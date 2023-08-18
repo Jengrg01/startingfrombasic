@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- WAP TO INPUT A NUMBER AND PRINT IT'S SUM OF DIGIT 
+     246= 2+4+6=12
+    4225= 4+2+2+5= 13
+    74= 7+4= 11-->
+    <!-- CASE 1
+    a=246
+sum = 0
+checks if 246!=0
+b = a%10 = 246%10 = 6
+sum = 0+6 = 6
+a = a/10 = 246/10 = 24(due to math.floor)
+CASE2   
+24!=0
+b= 24%10 = 4
+sum = 6+4 = 10
+a = a/10 = 24/10 = 2
+CASE3
+2!=0
+b = 2%10= 2
+sum = 10+2 = 12
+a = a/10 = 2/10 = 0
+CASE4
+0!=0(loop ends)-->
+    <script>
+        let a= 246
+        let product=1
+        let count=0
+        while (a!=0){
+            count= count+1
+            b = a%10
+            product= product*b
+            a= Math.floor(a/10)//Math.floor() static method always rounds down and returns the largest integer less than or equal to a given number.
+        }
+        document.write(`${product}<br>`)
+        document.write(count+"<br>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        logical operators are:  and(&&), or(||), not(!)
+        and: (prints true if all the given condition are true otherwise false is printed)
+        or: it prints true if on eof the two conditions is fulfilled and false if none of the condition is true)
+        not: it reverses the given output
+        A  B  O (0 is false and 1 is true in this)
+        0  0  0
+        0  1  0
+        1  0  0
+        1  1  1(and condition)
+        _______________________
+        A  B  O
+        0  0  0
+        0  1  1
+        1  0  1
+        1  1  1(or condition)
+        ______________________
+        A  O
+        1  0
+        0  1(not condition)
+     -->
+    <script>
+        x=8
+        y=5
+        document.write(x == 8 || y== 5)
+        document.write(x == 8 && y== 5)
+        document.write((a>b)||(c>b)||(b>c))
+        document.write(!(x>y))
+    </script>
+</body>
+</html>

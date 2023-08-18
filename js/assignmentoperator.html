@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- 
+        Operator	Example	Same As
+               =	x = y	x = y
+               +=	x += y	x = x + y
+               -=	x -= y	x = x - y
+               *=	x *= y	x = x * y
+               /=	x /= y	x = x / y
+               %=	x %= y	x = x % y
+               **=	x **= y	x = x ** y
+               a++(postfix) which is same as a=a+1
+               a--
+               ++a(prefix)
+               --a
+     -->
+     <script>
+        // a=4
+        // b=3
+        // c=2
+        // document.write(a+=b)
+        // document.write(a+=c)//the value outcome will be 9 as the value alwyas upgrades
+        // document.write(a**=c)
+        a=1
+        // document.write(`${a++}<br>`)//it depends on whether the ++ is front or a, if a is upfront, the value will be printed as 1 and if value is ++ it will be 2
+        // document.write(`${a++}<br>`)
+        // document.write(`${a++}<br>`)// a=1 fix=2
+        // document.write(`${--a}<br>`)//a=1 fix=1
+        // document.write(`${a++}<br>`)//a=1  fix=2
+        // document.write(`${a}<br>`)//a=2     fix=2
+        // document.write(`${a++}<br>`)//a=2   fix=3
+        // document.write(`${--a}<br>`)//a=2   fix=2
+        document.write(`${--a}<br>`)
+        document.write(`${++a}<br>`)
+        document.write(`${--a}<br>`)
+        document.write(`${a++}<br>`)
+        document.write(`${a--}<br>`)
+        document.write(`${++a}<br>`)
+        document.write(`${a--}<br>`)
+        document.write(`${++a}<br>`)
+        document.write(`${a}<br>`)
+        // a fix
+        // 0  0
+        // 1  1
+        // 0  0
+        // 0  1
+        // 1  0
+        // 1  1
+        // 1  0
+        // 1  1
+        // 1
+     </script>
+  </body>
+</html>
